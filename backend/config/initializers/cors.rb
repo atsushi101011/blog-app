@@ -1,6 +1,6 @@
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins '*' #<=全てのオリジンからのリクエストを許可 
+    origins '*' #<=全てのオリジンからのリクエストを許可
 
     resource '*',
       headers: :any,
